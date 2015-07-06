@@ -1,1 +1,0 @@
-# audyx-styleguide
