@@ -1,0 +1,231 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+p {
+	font-size: 14px;
+	font-weight: 400;
+	width: 500px;	
+}
+ol, ul {
+	font-size: 13px;;
+	font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+h1 {
+	font-weight: 300;
+	font-size: 50px;
+}
+.logo {
+	padding: 40px 0;
+	width: 500px;
+	text-align: center;
+}
+.label {
+	color: #111;
+	font-weight: 400;
+}
+a {
+	color: #3D99F0;
+	text-decoration: none;
+	font-size: 16px;
+}
+a:hover,
+a.hover {
+	color: #4c89c2;
+	text-decoration: none;
+}
+button {
+  border: 0;
+  background: #3D99F0;
+  padding: 6px 12px;
+	line-height: 1.428571429;
+  vertical-align: middle;
+  color: #fff;
+	border-radius: 3px;
+  -webkit-appearance: button;
+  cursor: pointer;
+	font-size: 16px;
+	margin-right: 15px;
+}
+button.btn-primary {
+	background: #3D99F0;
+}
+button.btn-primary:hover,
+button.btn-primary_hover {
+	background: #4c89c2;
+}
+.btn {
+	border-radius: 2px;
+}
+.filter .btn {
+	vertical-align: middle;
+	color: #837c7c;
+	height: 34px;
+	width: 34px;
+	background: #e6e5e5 4px 5px no-repeat;
+	border-color: #dbdbdb;
+	background-size: 22px 22px;
+}
+.filter .btn.show-answered_active {
+	background: #fff 4px 5px no-repeat;
+	background-image: url(images/show_answered_only.png);
+	border-color: #3D99F0;
+}
+.filter .btn.show-answered_inactive {
+	background-image: url(images/show_all.png);
+}
+span.filter-label {
+  margin-right: 6px;
+  color: #B6B6B6;
+	font-size: 11px;
+  font-weight: 500;
+	text-transform: uppercase;
+}
+input[type=password], input[type=email], input[type=text]  {
+  width: 60%;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+	height: 34px;
+	padding: 6px 12px;
+	line-height: 1.42857143;
+	font-size: 14px;
+}
+*::-webkit-input-placeholder {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+}
+*:-moz-placeholder {
+	/* FF 4-18 */
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+}
+*::-moz-placeholder {
+	/* FF 19+ */
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+}
+*:-ms-input-placeholder {
+	/* IE 10+ */
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+}
+.form-control {
+	box-shadow: none;
+	solid 1px #eeeeee
+}
+.input-group-addon {
+	border-radius: 0;
+	border: 0;
+	color: #fff;
+	background-color: #555;
+}
+.pagination {
+	margin: 0;
+}
+.fa-search.fa-search-corner {
+	color: #FFFFFF;
+	background-color: #cecaca;
+	border-radius: 50%;
+	font-size: 12px;
+	padding: 4px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.clear-search {
+	position: absolute;
+  top: 8px;
+  right: 10px;
+  color: #cecaca;
+  font-size: 18px;
+  z-index: 2;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.form-navigation .fa {
+	color: #3d99f0;
+	font-size: 19px;
+	border-radius: 50%;
+	padding: 5px;
+	border: 3px solid #3d99f0;
+}
+.fa-long-arrow-left.no-more {
+	color: #eeeded;
+	border-color: #eeeded;
+	cursor: default;
+}
+
+/* demo only, not part of Manahan style */
+
+form {
+	width: 300px;
+}
+label {
+	display: block;
+	padding-bottom: 0.5em;
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.element {
+	margin-bottom: 2em;
+}
+.input-group {
+
+}
+span.state {
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #aaa;
+	font-weight: 400;
+	margin-left: 13px;
+}
+[role=main] {
+  max-width: 72em;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+.title {
+	font-size: 70%;
+	margin: 5em 0 2em;
+	font-weight: normal;
+	padding: 1em 0;
+	border-bottom: 1px solid gray;
+}
+ul.colours {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.colours li {
+  overflow: hidden;
+  border: 1px solid #dddddd;
+  padding: 0.3em;
+  margin: 0 0.2em 0.2em 0;
+	float: left;
+	width: 5em;
+	text-align: center;
+}
+ul.colours li span {
+	font-family: "Helvetica", "Arial", sans-serif;
+}
+ul.colours .swatch {
+  width: 100%;
+  height: 4em;
+  margin-bottom: 0.2em;
+	display: block;
+}
+ul.colours:after {
+	clear: both;
+}
+p.primary,
+p.secondary,
+p.paragraph {
+	line-height: 1;
+}

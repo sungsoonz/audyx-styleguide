@@ -1,0 +1,187 @@
+<!-- Beginning of Styleguide -->
+
+<title>Audyx Styleguide</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+<link href='style.css' rel='stylesheet' type='text/css'>
+
+<div role="main">
+
+	<h2 class="title">Brand</h2>
+	<div class="logo">
+		<img src="images/logo.png" width="300">
+	</div>
+	<div>
+	<h2 class="title">Colours</h2>
+	<ul class="colours">
+		<li>
+			<span class="swatch" style="background: #3D99F0;"></span>
+			<span class="label">#3D99F0</span>
+		</li>
+		<li>
+			<span class="swatch" style="background: #3E7DFF;"></span>
+			<span class="label">#3E7DFF</span>
+		</li>
+		<li>
+			<span class="swatch" style="background: #FF1B22;"></span>
+			<span class="label">#FF1B22</span>
+		</li>
+		<li>
+			<span class="swatch" style="background: green;"></span>
+			<span class="label">GREEN</span>
+		</li>
+		<li>
+			<span class="swatch" style="background: #000000;"></span>
+			<span class="label">#000000</span>
+		</li>
+		<li>
+			<span class="swatch" style="background: #555555;"></span>
+			<span class="label">#555555</span>
+		</li>
+		<li>
+			<span class="swatch" style="background: #777777;"></span>
+			<span class="label">#777777</span>
+		</li>
+		<li>
+			<span class="swatch" style="background: #999999;"></span>
+			<span class="label">#999999</span>
+		</li>
+		<li>
+			<span class="swatch" style="background: #CCCCCC;"></span>
+			<span class="label">#CCCCCC</span>
+		</li>
+		
+	</ul>
+	
+	<div style="clear:both;"></div>
+	
+	<h2 class="title">Fonts</h2>
+	<p class="primary">Primary font: 'Open Sans', sans-serif;</p>
+
+	<h2 class="title">Headings</h2>
+	<h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	<h3>Heading 3</h3>
+	<h4>Heading 4</h4>
+	<h5>Heading 5</h5>
+	<h6>Heading 6</h6>
+
+	<h2 class="title">Paragraph</h2>
+	<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+	
+	<h2 class="title">Form Elements</h2>
+	<form>
+		<div class="element">
+			<label>Button / Link</label>
+			<p>
+		    <button class="btn-primary">Terminate</button>
+				<a href="#">Cancel</a>
+			</p>
+			<p>
+		    <button class="btn-primary_hover">Terminate</button>
+				<a class="hover" href="#">Cancel</a>
+				<span class="state">(hover)</span>
+			</p>
+		</div>
+		<div class="element">
+			<label>Filter</label>
+			<p class="filter">
+				<span class="filter-label">filter</span>
+				<button class="btn btn-default show-answered_active"></button>
+				<span class="state">(active)</span>
+			</p>
+			<p class="filter">
+				<span class="filter-label">filter</span>
+				<button class="btn btn-default show-answered_inactive"></button>
+				<span class="state">(inactive)</span>
+			</p>
+		</div>
+		<div class="element">
+			<p class="form-navigation">
+				<label>Form Navigation</label>
+				<i class="fa fa-long-arrow-left no-more"></i>
+		    <i class="fa fa-long-arrow-right"></i>
+			</p>
+		</div>
+		<div class="element">
+			<label>Login</label>
+		  <input type="email" placeholder="Username" />
+		  <input type="password" class="password" placeholder="Password" />
+		</div>
+		<div class="element">
+			<label>Search</label>
+			<p>
+				<i class="fa fa-search fa-search-corner"></i>
+				<span class="state">(Patient Avatar)</span>
+			</p>
+			<div class="input-group">
+        <span class="input-group-addon">
+          <i class="fa fa-search"></i>
+        </span>
+        <input type="text" class="form-control search-patient" placeholder="Search for a patient">
+        <i class="fa fa-plus-circle clear-search" ng-click="query='';"></i>
+      </div>
+		</div>
+		<div class="element">
+			<label>Pagination</label>
+			<ul class="pagination-sm pagination" rotate="false" total-items="pagedPatients.length" page="currentPage" items-per-page="patientsPerPage" max-size="10">
+			  <!-- ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope active"><a class="ng-binding">1</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" class="ng-scope"><a class="ng-binding">2</a></li><!-- end ngRepeat: page in pages --><li class="ng-scope"><a class="ng-binding">3</a></li><!-- end ngRepeat: page in pages -->
+			</ul>
+		</div>
+	  <div class="element">
+			<label>Text Field</label>
+	    <input type="text" />
+		</div>
+	  <div class="element">
+			<label for="select_element">Dropdown Selection</label>
+	    <select id="select_element">
+	      <optgroup label="Option Group 1">
+	        <option value="1">Option 1</option>
+	        <option value="2">Option 2</option>
+	      </optgroup>
+	      <optgroup label="Option Group 2">
+	        <option value="1">Option 1</option>
+	        <option value="2">Option 2</option>
+	        <option value="3" disabled>Disabled Option</option>
+	      </optgroup>
+	    </select>
+		</div>
+		<div class="element">
+			<label>Radio Selection</label>
+			<div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+			    Option 1
+			  </label>
+			</div>
+			<div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+			    Option 2
+			  </label>
+			</div>
+			<div class="radio disabled">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+			    Option 3 is disabled
+			  </label>
+			</div>
+		</div>
+	</form>
+	
+	<h2 class="title">Icons</h2>
+	<img src="images/better.png">
+	<img src="images/worse.png">
+	<img src="images/compare_a.png">
+	<img src="images/compare.png">
+	<img src="images/full.png">
+	<img src="images/half.png">
+	<img src="images/user.png">
+
+	
+</div>
+
+<!-- End of Styleguide -->
+
