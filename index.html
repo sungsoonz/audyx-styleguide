@@ -61,12 +61,8 @@
 	<p class="primary">Primary font: 'Open Sans', sans-serif;</p>
 
 	<h2 class="title">Headings</h2>
-	<h1>Heading 1</h1>
-	<h2>Heading 2</h2>
-	<h3>Heading 3</h3>
-	<h4>Heading 4</h4>
-	<h5>Heading 5</h5>
-	<h6>Heading 6</h6>
+	<h1>Vous avez une question?</h1>
+	<h2>Anamnesis</h2>
 
 	<h2 class="title">Paragraph</h2>
 	<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
@@ -89,13 +85,12 @@
 			<label>Filter</label>
 			<p class="filter">
 				<span class="filter-label">filter</span>
-				<button class="btn btn-default show-answered_active"></button>
-				<span class="state">(active)</span>
+				<button class="btn btn-default show-answered_inactive"></button>
 			</p>
 			<p class="filter">
 				<span class="filter-label">filter</span>
-				<button class="btn btn-default show-answered_inactive"></button>
-				<span class="state">(inactive)</span>
+				<button class="btn btn-default show-answered_active"></button>
+				<span class="state">(active)</span>
 			</p>
 		</div>
 		<div class="element">
@@ -130,6 +125,18 @@
 			  <!-- ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope active"><a class="ng-binding">1</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" class="ng-scope"><a class="ng-binding">2</a></li><!-- end ngRepeat: page in pages --><li class="ng-scope"><a class="ng-binding">3</a></li><!-- end ngRepeat: page in pages -->
 			</ul>
 		</div>
+		<div class="ad-play-control element">
+			<label>Test Play Controls</label>
+      <a>
+          <i class="fa fa-backward ad-off"></i>
+      </a>
+      <a>
+          <i class="fa fa-play"></i>
+      </a>
+      <a>
+          <i class="fa fa-forward"></i>
+      </a>
+	  </div>
 	  <div class="element">
 			<label>Text Field</label>
 	    <input type="text" />
@@ -172,13 +179,13 @@
 	</form>
 	
 	<h2 class="title">Icons</h2>
-	<img src="images/better.png">
+	<div class="picture patient-picture"></div>
+	<!-- <img src="images/better.png">
 	<img src="images/worse.png">
 	<img src="images/compare_a.png">
 	<img src="images/compare.png">
 	<img src="images/full.png">
-	<img src="images/half.png">
-	<img src="images/user.png">
+	<img src="images/half.png"> -->
 
 	
 </div>
