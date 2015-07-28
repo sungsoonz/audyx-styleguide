@@ -116,13 +116,12 @@ input[type=password], input[type=email], input[type=text]  {
 }
 .form-control {
 	box-shadow: none;
-	solid 1px #eeeeee
 }
 .input-group-addon {
 	border-radius: 0;
-	border: 0;
-	color: #fff;
-	background-color: #555;
+	border: 1px solid #ddd;
+	color: #555;
+	background-color: #eee;
 }
 .picture {
 	position: relative;
