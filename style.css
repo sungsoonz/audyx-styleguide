@@ -210,6 +210,200 @@ input[type=password], input[type=email], input[type=text]  {
 	color: #5b98cc;
 }
 
+.bookmarks {
+	right: 0;
+	bottom: 0;
+  margin-right: 20px;
+	margin-bottom: 20px;
+  position: fixed;
+}
+
+.ad-sprite {
+	background: url("images/sprite.png") no-repeat top left;
+	width: 64px;
+	height: 65px;
+}
+
+.bookmarks .main-button {
+	background-position: 0 -1479px;
+	position: relative;
+	border-radius: 50%;
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
+	display: inline-block;
+}
+
+.bookmarks ul {
+	list-style: none;
+/*	display: -webkit-inline-box;*/
+}
+
+.bookmarks ul li {
+	list-style: none;
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
+	border-radius: 50%;
+	width: 46px;
+	height: 46px;
+	margin: 4px;
+	display: inline-block;
+	opacity: 0;
+}
+
+.bookmarks ul.bookmark-list {
+  padding-left: 140px;
+  width: 117px;
+  box-sizing: content-box;
+}
+.bookmarks ul.questionnaire-list {
+	display: -webkit-inline-box;
+	margin-right: 6px;
+}
+.bookmarks ul.questionnaire-list li.add-questionnaire {
+	background: url("images/questionnaire-bookmark.png") no-repeat center;
+	background-size: 24px 24px;
+	border: 2px dotted #56A4EE;
+}
+.bookmarks ul.bookmark-list li.patient-bookmark {
+  background-image: url("images/patient-bookmark.png");
+  background-repeat: no-repeat;
+  background-position: center;
+	background-size: 20px 20px;
+}
+.bookmarks ul.bookmark-list li.speech-bookmark {
+  background-image: url("images/speech-bookmark.png");
+  background-repeat: no-repeat;
+  background-position: center; 
+	background-size: 30px 30px;
+}
+.bookmarks ul.bookmark-list li.tone-bookmark {
+  background-image: url("images/tone-bookmark.png");
+  background-repeat: no-repeat;
+  background-position: center; 
+	background-size: 30px 30px;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+
+
 /* demo only, not part of Manahan style */
 
 form {

@@ -7,6 +7,21 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700' rel='stylesheet' type='text/css'>
 <link href='style.css' rel='stylesheet' type='text/css'>
 
+<div class="bookmarks">
+		
+		<ul class="bookmark-list">
+			<li class="animated patient-bookmark" data-animation-delay=".1s"></li>
+			<li class="animated tone-bookmark" data-animation-delay=".1s"></li>
+			<li class="animated speech-bookmark"></li>
+		</ul>
+		<ul class="questionnaire-list">
+			<li class="animated add-questionnaire" data-animation-delay=".1s"></li>
+			<li class="animated add-questionnaire"></li>
+		</ul>
+		<div class="ad-sprite main-button"></div>
+		
+</div>
+
 <div role="main">
 
 	<h2 class="title">Brand</h2>
@@ -192,3 +207,32 @@
 
 <!-- End of Styleguide -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.main-button').hover(function(){
+		    $('.bookmark-list li').toggleClass('fadeInUp');
+				$('.questionnaire-list li').toggleClass('fadeInRight');
+		});
+
+		// $(".main-button").hover(function() {
+// 			$('.bookmarks ul li').addClass("fadeInUp").removeClass("fedeInUp");
+// 		}, function() {
+// 			$('.bookmarks ul li').removeClass("fadeInUp").addClass("fadeInDown");
+// 		});
+
+
+		// animation delay
+		$('[data-animation-delay]').each(function () {
+        var animationDelay = $(this).data("animation-delay");
+        $(this).css({
+            "-webkit-animation-delay": animationDelay,
+            "-moz-animation-delay": animationDelay,
+            "-o-animation-delay": animationDelay,
+            "-ms-animation-delay": animationDelay,
+            "animation-delay": animationDelay
+        });
+    });
+		
+	});
+</script>
