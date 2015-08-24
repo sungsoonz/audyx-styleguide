@@ -213,8 +213,7 @@ input[type=password], input[type=email], input[type=text]  {
 .bookmarks {
 	right: 0;
 	bottom: 0;
-  margin-right: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
   position: fixed;
 }
 
@@ -234,7 +233,6 @@ input[type=password], input[type=email], input[type=text]  {
 
 .bookmarks ul {
 	list-style: none;
-/*	display: -webkit-inline-box;*/
 }
 
 .bookmarks ul li {
@@ -249,7 +247,7 @@ input[type=password], input[type=email], input[type=text]  {
 }
 
 .bookmarks ul.bookmark-list {
-  padding-left: 140px;
+  padding-left: 135px;
   width: 117px;
   box-sizing: content-box;
 }
@@ -399,6 +397,72 @@ input[type=password], input[type=email], input[type=text]  {
     -webkit-transform: none;
     transform: none;
   }
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50%, 100% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+@-webkit-keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut;
 }
 
 
