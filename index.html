@@ -10,13 +10,13 @@
 <div class="bookmarks">
 		
 		<ul class="bookmark-list">
-			<li class="animated patient-bookmark"></li>
-			<li class="animated tone-bookmark"></li>
-			<li class="animated speech-bookmark"></li>
+			<li class="animated patient"></li>
+			<li class="animated tone"></li>
+			<li class="animated speech"></li>
 		</ul>
 		<ul class="questionnaire-list">
-			<li class="animated add-questionnaire"></li>
-			<li class="animated add-questionnaire"></li>
+			<li class="animated anamnesis"></li>
+			<li class="animated adaptation"></li>
 		</ul>
 		<div class="ad-sprite main-button"></div>
 		
@@ -213,7 +213,14 @@
 			$('.bookmarks li').removeClass('zoomIn').addClass('zoomOut');
 		});
 
-
+		$('.questionnaire-list li').click(function() {
+			var $this = $(this);
+			$this.addClass('zoomOut');
+			setTimeout(function() {
+				$this.removeClass('zoomOut').insertAfter('.bookmark-list .patient').addClass('zoomIn');
+			}, 300);
+		});
+			
 		// // animation delay
 		// $('[data-animation-delay]').each(function () {
 		// 	var animationDelay = function () {

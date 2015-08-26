@@ -210,6 +210,12 @@ input[type=password], input[type=email], input[type=text]  {
 	color: #5b98cc;
 }
 
+.ad-sprite {
+	background: url("images/sprite.png") no-repeat top left;
+	width: 64px;
+	height: 65px;
+}
+
 .bookmarks {
 	right: 0;
 	bottom: 0;
@@ -217,71 +223,74 @@ input[type=password], input[type=email], input[type=text]  {
   position: fixed;
 }
 
-.ad-sprite {
-	background: url("images/sprite.png") no-repeat top left;
-	width: 64px;
-	height: 65px;
-}
-
 .bookmarks .main-button {
 	background-position: 0 -1479px;
-	position: relative;
 	border-radius: 50%;
 	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
 	display: inline-block;
+	cursor: pointer;
 }
 
 .bookmarks ul {
 	list-style: none;
+	-webkit-transition: all 0.7s ease-out;
+	       -moz-transition: all 0.7s ease-out;
+	        -ms-transition: all 0.7s ease-out;
+	         -o-transition: all 0.7s ease-out;
+	            transition: all 0.7s ease-out;
 }
 
 .bookmarks ul li {
 	list-style: none;
 	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
 	border-radius: 50%;
-	width: 46px;
-	height: 46px;
+	width: 48px;
+	height: 48px;
 	margin: 4px;
 	display: inline-block;
-	opacity: 0;
+	opacity: 0;		
+	cursor: pointer;
+	-webkit-transition: all 0.7s ease-out;
+	       -moz-transition: all 0.7s ease-out;
+	        -ms-transition: all 0.7s ease-out;
+	         -o-transition: all 0.7s ease-out;
+	            transition: all 0.7s ease-out;
 }
 
 .bookmarks ul.bookmark-list {
-  padding-left: 135px;
-  width: 117px;
+  padding-left: 140px;
+  width: 116px;
   box-sizing: content-box;
 }
 .bookmarks ul.questionnaire-list {
+	margin: 0;
 	display: -webkit-inline-box;
 	margin-right: 6px;
+	min-width: 160px;
 }
-.bookmarks ul.questionnaire-list li.add-questionnaire {
-	background: url("images/questionnaire-bookmark.png") no-repeat center;
-	background-size: 24px 24px;
+.bookmarks ul.questionnaire-list li {
+	background: url("images/questionnaire_bookmark.png") no-repeat center;
 	border: 2px dotted #56A4EE;
 }
-.bookmarks ul.bookmark-list li.patient-bookmark {
-  background-image: url("images/patient-bookmark.png");
-  background-repeat: no-repeat;
-  background-position: center;
-	background-size: 20px 20px;
+.bookmarks ul.bookmark-list li.anamnesis {
+  background-image: url("images/questionnaire_bookmark.png");
 }
-.bookmarks ul.bookmark-list li.speech-bookmark {
-  background-image: url("images/speech-bookmark.png");
-  background-repeat: no-repeat;
-  background-position: center; 
-	background-size: 30px 30px;
+.bookmarks ul.bookmark-list li.adaptation {
+  background-image: url("images/questionnaire_bookmark.png");
 }
-.bookmarks ul.bookmark-list li.tone-bookmark {
-  background-image: url("images/tone-bookmark.png");
-  background-repeat: no-repeat;
-  background-position: center; 
-	background-size: 30px 30px;
+.bookmarks ul.bookmark-list li.patient {
+  background-image: url("images/patient_bookmark.png");
+}
+.bookmarks ul.bookmark-list li.speech {
+  background-image: url("images/speech_bookmark.png");
+}
+.bookmarks ul.bookmark-list li.tone {
+  background-image: url("images/tone_bookmark.png");
 }
 
 .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
